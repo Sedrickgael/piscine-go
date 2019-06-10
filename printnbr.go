@@ -3,5 +3,6 @@ package piscine
 import "fmt"
 
 func PrintNbr(nbr int) {
-	fmt.Println(nbr\n)
+	fmt.Println(nbr)
+	fmt.Println("\n")
 }
