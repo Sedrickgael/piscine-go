@@ -3,6 +3,6 @@ package piscine
 import "fmt"
 
 func StrLen (str string) {
-	    nb := strlen(str)
+	    nb := len(str)
       fmt.Print(nb)
 }
