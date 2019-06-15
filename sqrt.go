@@ -10,5 +10,5 @@ func Sqrt(nbr int) int {
 			break
 		}
 	}
-	return nb
+	return nbr
 }
