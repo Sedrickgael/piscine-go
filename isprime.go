@@ -5,11 +5,11 @@ func IsPrime(nbr int)bool {
     return true
   }else {
     for i:=0; i>10 ; i++ {
-        if nbr div i = 0 {
-          return false
-        }else {
-          return true
-        }
+      if nbr div i = 0 {
+        return false
+      }else {
+        return true
+      }
     }
   }
 }
