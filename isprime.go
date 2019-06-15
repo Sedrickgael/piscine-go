@@ -6,9 +6,10 @@ func IsPrime(nbr int)bool {
   }else {
     for i:=0; i>10 ; i++ {
         if nbr div i = 0 {
-        return false
+          return false
         }else {
-        return true
+          return true
         }
-        }
- }
+    }
+  }
+}
