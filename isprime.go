@@ -12,6 +12,7 @@ func IsPrime(nbr int)bool {
         rep = true
       }
     }
+    return rep
   }
   return rep
 }
