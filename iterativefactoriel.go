@@ -1,17 +1,21 @@
 package piscine
 
+import "math"
+
 func IterativeFactorial(nbr int) int {
-	
-	if nbr<0 {
+	if nbr < 0 {
 		return 0
-	}else if nbr==0 || nbr == 1 {
+	} else if nbr == 0 || nbr == 1 {
 		return 1
-	}else {
+	} else {
 		fac := 1
-		for i:=nbr; i>1; i-- {
+		for i := nbr; i >=1; i-- {
 			fac *= i
+			if math.MaxInt32 < fac {
+				fac = 0
+				break
+			}
 		}
 		return fac
 	}
-	
 }
