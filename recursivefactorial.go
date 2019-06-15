@@ -1,12 +1,21 @@
 package piscine
 
-func RecursiveFactorial(nbr int) int {
-	if nbr == 1 || nbr == 0{
-		return 1
-	}
-	if nbr > 1 {
-		return nbr * RecursiveFactorial(nbr - 1)
-	}
-	return 0
-}
+import "math"
 
+func IterativeFactorial(nbr int) int {
+	if nbr < 0 {
+		return 0
+	} else if nbr == 0 || nbr == 1 {
+		return 1
+	} else {
+		fac := 1
+		for i := nbr; i >=1; i-- {
+			fac *= i
+			if math.MaxInt32 < fac {
+				fac = 0
+				break
+			}
+		}
+		return fac
+	}
+}
