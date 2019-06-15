@@ -14,5 +14,5 @@ func IterativePower(nbr int, power int)int {
 	} else {
 		pow = 0
 	}
-	fmt.Print(pow)
+	return pow
 }
