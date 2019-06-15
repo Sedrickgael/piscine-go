@@ -3,7 +3,7 @@ package piscine
 import "math"
 
 func Sqrt(nb int) int {
-	if nb < 0 || math.MaxInt32 < nb {
+	if nb < 0 || math.MaxInt16 < nb {
 		return 0
 	}else {
 		
