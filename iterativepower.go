@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 func IterativePower(nbr int, power int)int {
 	pow :=1
 	if ( (nbr>0 && power>0) || (nbr<0 && power%2 == 0) ){
