@@ -12,6 +12,7 @@ func IterativeFactorial(nbr int) int {
 		for i:=nbr; i>1; i-- {
 			fac *= i
 		}
+		return fac
 	}
-	return fac
+	
 }
