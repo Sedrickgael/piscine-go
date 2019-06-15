@@ -7,12 +7,8 @@ func RecursiveFactorial(nbr int) int {
 		return 1
 	}
 	if nbr > 1 {
-		return nbr * recursivefac(nbr - 1)
+		return nbr * RecursiveFactorial(nbr - 1)
 	}
 	return 0
 }
 
-func main(){
-	fac := recursivefac(nbr)
-	fmt.Print(fac)
-}
