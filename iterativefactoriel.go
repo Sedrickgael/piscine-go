@@ -7,9 +7,10 @@ func IterativeFactorial(nbr int) int {
 	}
 	if nbr==0 || nbr == 1 {
 		fac = 1
+	}else {
+		for i:=nbr; i>1; i-- {
+			fac *= i
+		}
 	}
-	for i:=nbr; i>1; i-- {
-		fac *= i
-	}	
 	return fac
 }
