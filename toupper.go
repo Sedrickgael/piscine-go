@@ -2,6 +2,6 @@ package piscine
 
 import	"strings"
 
-func ToUppe(str string ) string {
+func ToUpper(str string ) string {
 	return strings.ToUpper(str)
 }
