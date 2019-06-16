@@ -6,7 +6,7 @@ func IsPrime(nbr int)bool {
   }else if nbr == 1 {
     return false
   }else {
-    for i:= 1; i<100; i++ {
+    for i:= 2; i<100; i++ {
       if nbr % i == 0{
         return false
       }else {
