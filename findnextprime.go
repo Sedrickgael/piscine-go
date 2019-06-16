@@ -18,14 +18,15 @@ func Prime(nbr int)bool {
 }
 
 
-func FindNextPrime(nbr int)int {
-	next := nbr 
-	for i:= nbr; i>nbr;  {
-		if Prime(i){
-			next=i
-		}else {
-			i++
+func FindNextPrime(nb int)int{
+	next:=nb-1
+	i:=nb+1
+	for i>nb{
+		next++
+		if Prime(next){
+			return next
 		}
+		i++	
 	}
 	return next
 }
