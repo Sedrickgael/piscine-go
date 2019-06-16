@@ -1,27 +1,11 @@
 package piscine
 
-func Prime(nbr int)bool {
-  rep := true
-  if  nbr == 2 || nbr == 3  || nbr == 5 || nbr == 7 || nbr == 11 || nbr == 13 || nbr == 17 || nbr == 19 || nbr == 21 || nbr == 23 || nbr == 29 || nbr == 31 || nbr == 37 {
-    rep = true
-  }else if nbr == 1 || nbr ==0 {
-    rep = false
-  }else {
-    for i:= 2; i<40; i++ {
-      if nbr % i == 0{
-        rep = false
-      }
-	}
-	
-  }
-  return rep
-}
+import "math"
 
-
-func FindNextPrime(nb int)int{
-	next:=nb-1
+func FindNextPrime(nbr int)int{
+	next:=nbr-1
 	i:=nb+1
-	for i>nb{
+	for i>nbr{
 		next++
 		if Prime(next){
 			return next
@@ -30,3 +14,18 @@ func FindNextPrime(nb int)int{
 	}
 	return next
 }
+
+
+func Prime(nbr int) bool{
+	rep:=true
+	if nbr<=1{
+		return false
+	}
+	for i:=2;i<int(math.Round(math.Sqrt(float64(nbr))))+1;i++{
+		if nbr%i==0{
+			rep=false
+		}
+	}
+	return rep
+}
+
