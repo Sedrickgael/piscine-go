@@ -4,7 +4,7 @@ import "math"
 
 func FindNextPrime(nbr int)int{
 	next:=nbr-1
-	i:=nb+1
+	i:=nbr+1
 	for i>nbr{
 		next++
 		if Prime(next){
