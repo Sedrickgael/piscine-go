@@ -1,17 +1,19 @@
 package piscine
 
 func IsPrime(nbr int)bool {
+  rep := true
   if  nbr == 2 || nbr == 3  || nbr == 5 || nbr == 7  {
-    return true
+    rep = true
   }else if nbr == 1 {
-    return false
+    rep = false
   }else {
     for i:= 2; i<100; i++ {
       if nbr % i == 0{
-        return false
+        rep = false
       }else {
-        return true
+        rep = true
       }
     }
   }
+  return rep
 }
