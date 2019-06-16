@@ -20,7 +20,7 @@ func Prime(nbr int)bool {
 
 func FindNextPrime(nbr int)int {
 	next := nbr 
-	for i= nbr; i>nbr;  {
+	for i:= nbr; i>nbr;  {
 		if Prime(i){
 			next=i
 		}else {
