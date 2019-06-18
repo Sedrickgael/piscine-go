@@ -5,7 +5,7 @@ import "fmt"
 func Raid1a(x, y int){
 	for i:=1; i<=x; i++{
 		if i==1 || i==x{
-			fmt.Print("0")
+			fmt.Print("o")
 		}else {
 			fmt.Print("-")
 		}		
