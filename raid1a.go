@@ -30,11 +30,12 @@ func Raid1a(x, y int){
 	if y>1{
 		for i:=1; i<=x; i++{
 			if i==1 || i==x{
-				fmt.Print("0")
+				fmt.Print("o")
 			}else {
 				fmt.Print("-")
 			}		
 		}
+		fmt.Print("\n")
 	}
 	
 }
