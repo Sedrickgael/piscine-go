@@ -38,6 +38,7 @@ func Raid1b(x, y int){
         }
 
       }
+      fmt.Print("\n")
     }
    }	
 }
