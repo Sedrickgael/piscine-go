@@ -1,9 +1,14 @@
 package piscine
 
-import	"strings"
+import "strings"
 
-func Capitalize(str string ) string {
-	return strings.ToLower(str)
-	return strings.ToUpper(rune(str[0]))
-  
+func Capitalize(word string) string {
+	cap := strings.Title(ToLower(word))
+	i := Index(word, "_")
+	if i == -1 {
+		return cap
+	} else {
+		cap = strings.Replace(cap, string(cap[i+1]), ToUpper(string(cao[i+1])), i+1)
+		return cap
+	}
 }
