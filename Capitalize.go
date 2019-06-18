@@ -8,7 +8,7 @@ func Capitalize(word string) string {
 	if i == -1 {
 		return cap
 	} else {
-		cap = strings.Replace(cap, string(cap[i+1]), ToUpper(string(cao[i+1])), i+1)
+		cap = strings.Replace(cap, string(cap[i+1]), ToUpper(string(cap[i+1])), i+1)
 		return cap
 	}
 }
