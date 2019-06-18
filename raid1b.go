@@ -30,9 +30,9 @@ func Raid1b(x, y int){
     if y>1{
       for i:=1; i<=x; i++{
         if i==1 {
-          fmt.Print("/")
-        }else if i==x{
           fmt.Print("\\")
+        }else if i==x{
+          fmt.Print("/")
         }else {
           fmt.Print("*")
         }
