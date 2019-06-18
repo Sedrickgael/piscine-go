@@ -10,7 +10,7 @@ func Raid1b(x, y int){
       }else if i==x{
         fmt.Print("\\")
       }else {
-        fmt.Print('*')
+        fmt.Print("*")
       }
 
     }
@@ -34,7 +34,7 @@ func Raid1b(x, y int){
         }else if i==x{
           fmt.Print("\\")
         }else {
-          fmt.Print('*')
+          fmt.Print("*")
         }
 
       }
