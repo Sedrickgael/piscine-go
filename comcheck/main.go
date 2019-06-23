@@ -21,7 +21,7 @@ func main() {
 	}
 
 	for _, s := range safeWords {
-		if result != s {
+		if result == s {
 			fmt.Println("Alert!!!")
 		}
 	}
