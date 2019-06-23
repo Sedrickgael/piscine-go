@@ -1,9 +1,9 @@
 package piscine
 
-func Compact(ptr *[]string) int {
+func Compact(ptr *[]string , length int) int {
 	count := 0
-	for i := 0; i < len(ptr); i++ {
-		if (*ptr)[i] != " " {
+	for i := 0; i < length; i++ {
+		if (*ptr)[i] != "0" {
 			count++
 		}
 	}
