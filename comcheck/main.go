@@ -1,28 +1,24 @@
 package main
 
-import (
-	"fmt"
-	"os"
-)
+import "fmt"
+import "os"
 
-func main() {
-	var arrayRune []rune
-	var result string
-	safeWords := []string{"01", "galaxy", "galaxy 01"}
-
-	for i := 1; i < len(os.Args); i++ {
-		arrayRune = []rune(os.Args[i])
+func main(){
+	param:=os.Args
+	if iscorrectconcheck(param){
+		fmt.Println("Alert!!!")	
 	}
+}
 
-	for j := 0; j < len(arrayRune); j++ {
-		if arrayRune[j] != ' ' {
-			result += string(arrayRune[j])
+func iscorrectconcheck(param []string) bool{
+	if len(param)==1{
+		return false
+	}else{
+		for _,val:= range param[1:]{
+			if val=="01" || val=="galaxy" || val=="galaxy 01"{
+				return true
+			}	
 		}
 	}
-
-	for _, s := range safeWords {
-		if result == s {
-			fmt.Println("Alert!!!")
-		}
-	}
+	return false
 }
