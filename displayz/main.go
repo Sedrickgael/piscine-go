@@ -3,5 +3,5 @@ package piscine
 import "fmt"
 
 func DisplayZ(text string){
-  fmt.Println("z\n")
+  fmt.Print("z\n")
 }
